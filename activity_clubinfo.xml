@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.kurapika.danceclubapp.Clubinfo"
+    android:background="@drawable/nn">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Say hello to the University’s exercise in disguise—The Limkokwing Dance Club! Keep fit. Make friends. Feel the music. Join the Limkokwing Dance Club! Dancing is a fun and effective way to keep toned and in shape. Best of all, it’s for everyone! Head over to the Talent Development Office at the 3rd floor of the Plaza to sign up at only RM100 for the whole semester. Get your groove on with Hip-hop classes every Monday at 6:00-7:30 pm. End your week on a high with Breakdance classes every Friday at 5:00-6:30 pm. “The Dance Club fits perfectly around my studies. With two classes to choose from, it gives me the chance to dance to great music, with great people, and burn a ton of calories without even realizing it.” –Iman Azma, BA Event Management For more information, email katherine.odea@limkokwing.edu.my"
+        android:id="@+id/textView4"
+        android:textSize="20dp"
+        android:textColor="#f00d13ff"
+        android:layout_alignParentTop="true"
+        android:textAlignment="textEnd"
+        android:textColorHighlight="#ffff383d"
+        android:textColorHint="#ff7affb0"
+        android:textColorLink="#ff353dff"
+        android:textIsSelectable="true" />
+</RelativeLayout>
