@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ff0e0b0b">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dance Club social  APP"
+        android:id="@+id/textView6"
+        android:textColor="@android:color/secondary_text_dark"
+        android:textSize="25dp"
+        android:background="#f8a31dff"
+        android:autoText="true"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dance Club Schedule"
+        android:id="@+id/DanceClubSchedule"
+        android:background="#ffd1ffbf"
+        android:textSize="30dp"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Club Info"
+        android:id="@+id/Clubinfo"
+        android:background="#ffffdef7"
+        android:textSize="30dp"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/DanceClubSchedule"
+        android:layout_alignStart="@+id/imageView5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery"
+        android:id="@+id/Gallery"
+        android:background="#ffb8b0ff"
+        android:textSize="30dp"
+        android:onClick="Gallery"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/DanceClubSchedule" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:src="@drawable/limkok"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="takePhoto"
+        android:id="@+id/camera"
+        android:background="@android:drawable/ic_menu_camera"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/DanceClubSchedule"
+        android:layout_below="@+id/Clubinfo" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="music"
+        android:id="@+id/button"
+        android:onClick="playMusic"
+        android:layout_alignBaseline="@+id/Gallery"
+        android:layout_alignBottom="@+id/Gallery"
+        android:layout_alignEnd="@+id/imageView5"
+        android:textColor="#ffdf3aff"
+        android:background="@android:drawable/ic_media_next" />
+
+</RelativeLayout>
