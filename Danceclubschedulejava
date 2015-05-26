@@ -1,0 +1,105 @@
+package com.example.kurapika.danceapp;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
+
+public class Danceclubschedule extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_danceclubschedule);
+
+        final Button MONDAY= (Button) findViewById(R.id.button1);
+        // set action listener for button
+        MONDAY.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Danceclubschedule.this, Monday.class);
+                startActivity(intent);
+            }
+        });
+
+        final Button TUESDAY = (Button) findViewById(R.id.button2);
+        // set action listener for button
+        TUESDAY.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Danceclubschedule.this, TUESDAY.class);
+                startActivity(intent);
+            }
+        });
+
+        final Button WEDNESDAY	 = (Button) findViewById(R.id.button3);
+        // set action listener for button
+        WEDNESDAY	 .setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Danceclubschedule.this, WEDNESDAY.class);
+                startActivity(intent);
+            }
+        });
+        final Button THURSDAY = (Button) findViewById(R.id.button4);
+        // set action listener for button
+        THURSDAY.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Danceclubschedule.this, THURSDAY.class);
+                startActivity(intent);
+            }
+        });
+
+
+        final Button FRIDAY = (Button) findViewById(R.id.button5);
+        // set action listener for button
+        FRIDAY.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Danceclubschedule.this, FRIDAY.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_danceclubschedule, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}
+
